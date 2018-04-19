@@ -1,0 +1,35 @@
+
+.navBar {
+    width: 100%;
+    background: linear-gradient(90deg, $lightLight 50%, $medLight 50%);
+    padding: 10px 0;
+    position: fixed;
+    .wrapper {
+        width: 61%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            li {
+                border-right: 1px solid gainsboro;
+                padding: 0 30px;
+                display: flex;
+                justify-content: space-around;
+                &.last {
+                    border-right: none;
+                }
+                a {
+                    font-size: 13px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    color: $textBlack;
+                }
+            }
+        }
+    }
+}
+
