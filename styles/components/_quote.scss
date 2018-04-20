@@ -1,0 +1,42 @@
+.quoteBanner {
+    width: 100%;
+    background: linear-gradient(90deg, $lightPink 50%, $medPink 50%);
+    padding: 9rem 0;
+    .quoteText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 25%;
+        text-align: center;
+        position: relative;
+        p.quote {
+            font-size: 3.6rem;
+            font-weight: 700;
+            color: $textBlack;
+            margin: 0;
+        }
+        &::before,
+        &::after {
+            display: block;
+            position: absolute;
+            color: white;
+            font-size: 14rem;
+            top: -4rem;
+        }
+        &::before {
+            content: "“";
+            left: -5rem;
+        }
+        &::after {
+            content: "”";
+            right: -5rem;
+        }
+        p.author {
+            color: white;
+            font-size: 2.4rem;
+            font-weight: 300;
+            line-height: 0.5;
+        }
+    }
+}

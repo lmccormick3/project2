@@ -1,0 +1,33 @@
+.numbers {
+    width: 100%;
+    background: linear-gradient(90deg, $lightGreen 50%, $darkGreen 50%);
+    padding: 8rem 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5%;
+        .stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+            // align-content: center;
+            p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 3.6rem;
+                margin: 2rem auto 1rem auto;
+            }
+            a {
+               text-decoration: none;
+               color: $textBlack;
+               text-transform: uppercase;
+               font-size: 1rem;
+               border: 3px solid white;
+               padding: 1rem 2rem; 
+            }
+        }
+        .stat3 img, .stat4 img {
+            margin-bottom: 1rem;
+        }
+    }
+}

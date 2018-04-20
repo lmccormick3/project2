@@ -1,0 +1,58 @@
+.projects {
+    width: 100%;
+    background-color: $medDark;
+    padding-top: 5rem;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        h2 {
+            color:white;
+            font-size: 3.6rem;
+            font-weight: 300;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+        p {
+            color: $textGrey;
+            font-size: 1.2rem;
+            width: 50%;
+            text-align: center;
+            margin: 1.2rem 0;
+            line-height: 2;
+        }
+        p::after {
+            content:"";
+            background-color: $lightDark;
+            width: 30%;
+            height: 2px;
+            display: block;
+            margin: 3rem auto;
+        }
+        .projectsImg {
+            display: flex;
+            justify-content: center;
+            // .fas {
+            //     font-weight: 400;
+            //     color: #FFF;
+            //     font-size: 5rem;
+            // }
+        
+            img{
+                width: 80%;
+                display: block;
+                border-radius: 5px 5px 0 0;
+            }
+
+            // img::before {
+            //     content: "potato";
+            //     color: white;
+            //     display: block;
+            //     font-size: 5rem;
+                
+            // }
+        }
+    }
+
+}

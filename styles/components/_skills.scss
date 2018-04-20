@@ -1,0 +1,67 @@
+.skills {
+    width: 100%;
+    background-color: $darkDark;
+    padding: 5rem 0 ;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        h2 {
+            color:white;
+            font-size: 3.6rem;
+            font-weight: 300;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+        p.skillInfo {
+            color: $textGrey;
+            font-size: 1.2rem;
+            width: 50%;
+            text-align: center;
+            margin: 1.2rem 0;
+            line-height: 2;
+        }
+        p.skillInfo::after {
+            content:"";
+            background-color: $lightDark;
+            width: 30%;
+            height: 2px;
+            display: block;
+            margin: 1.6rem auto;
+        }
+    }
+    .skillset {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 8%;
+            color: white;
+            .skillImg {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 70%;
+                }
+            }
+            h4 {
+               font-size: 1.6rem; 
+               font-weight: 700;
+               margin: 1.6rem 0;
+            }
+           p {
+               color: $textGrey;
+               font-weight: 300;
+               font-size: 1rem;
+               text-align: center;
+               line-height: 24px;
+               margin:0;
+           }
+        }
+    }
+
+}
