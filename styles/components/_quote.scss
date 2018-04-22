@@ -7,7 +7,7 @@
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        width: 25%;
+        width: 30%;
         text-align: center;
         position: relative;
         p.quote {
@@ -23,14 +23,15 @@
             color: white;
             font-size: 14rem;
             top: -4rem;
+            font-weight: 700;
         }
         &::before {
             content: "“";
-            left: -5rem;
+            left: -7rem;
         }
         &::after {
             content: "”";
-            right: -5rem;
+            right: -7rem;
         }
         p.author {
             color: white;

@@ -5,6 +5,7 @@
     padding: 10px 0;
     position: fixed;
     z-index: 10;
+    box-shadow: 1px 1px 5px $textGrey;
     .wrapper {
         width: 61%;
         display: flex;
@@ -31,6 +32,11 @@
                     font-weight: 300;
                     text-decoration: none;
                     color: $textBlack;
+                    transition: all 1s ease;
+                }
+                a:hover {
+                    color: $textPink;
+                    font-weight: 700;
                 }
             }
         }

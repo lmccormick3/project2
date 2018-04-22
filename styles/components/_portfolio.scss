@@ -1,0 +1,106 @@
+.portfolio {
+    width: 100%;
+    background: $medDark;
+    padding: 5rem 0;
+    .textWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+        h2 {
+            color:white;
+            font-size: 3.6rem;
+            font-weight: 300;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+        p {
+            color: $textGrey;
+            font-size: 1.2rem;
+            width: 50%;
+            text-align: center;
+            margin: 1.2rem 0;
+            line-height: 2;
+        }
+        p::after {
+            content:"";
+            background-color: $lightDark;
+            width: 30%;
+            height: 2px;
+            display: block;
+            margin: 1.6rem auto;
+        }
+    }
+        .portfolioNav {
+            margin-bottom: 3rem;
+            ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            li {
+                padding: 0 1.8rem;
+                display: flex;
+                justify-content: space-around;
+                a {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #FFF;
+                    transition: color 0.5s ease;
+                }
+                a.active {
+                    color: $textPink;
+                }
+                a:hover{
+                    color: $textPink;
+                }
+            }
+        }
+    }
+    .loadMoreBtn a { 
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid white;
+        color: #FFF;
+        padding: 1.2rem 5%;
+        margin-top: 4rem;
+        transition: all 0.5s ease;
+    }
+    .loadMoreBtn a:hover{
+        background-color: #FFF;
+        color: $textBlack;
+    }
+}
+
+.portfolio .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    figure {
+        img{
+            width: 100%;
+            display: block;
+            transition: transform 1s ease;
+        }
+        img:hover {
+            transform: scale(1.2);
+            z-index: 5;
+            cursor: pointer;
+        }
+        figcaption {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            color: $textBlack;
+            background-color: #FFF;
+            width: 100%;
+            padding: 2rem 0;
+            margin: 0;
+        }
+    }
+}

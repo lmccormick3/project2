@@ -1,0 +1,42 @@
+footer {
+    width: 100%;
+    background: linear-gradient(90deg, $lightLight 50%, $medLight 50%);
+    padding: 5rem 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3%;
+        .column {
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: $textBlack;
+                margin: 0;
+            }
+            p {
+                color: $textGrey;
+                font-size: 1rem;
+                line-height: 2;
+                margin: 0;
+            }
+        }
+        .column2 .post {
+            display: flex;
+            img {
+                width: 100%;
+            }
+            .postText {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                h4 {
+                    
+                }
+            }
+            
+        }
+        .column4 img {
+            width: 100%;
+        }
+    }
+}
