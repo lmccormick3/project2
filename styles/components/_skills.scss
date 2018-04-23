@@ -33,7 +33,7 @@
     }
     .skillset {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         width: 100%;
         .skill {
             display: flex;
@@ -44,9 +44,6 @@
             .skillImg {
                 display: flex;
                 justify-content: center;
-                img {
-                    width: 70%;
-                }
             }
             h4 {
                font-size: 1.6rem; 
@@ -63,5 +60,37 @@
            }
         }
     }
+}
 
+//MEDIA QUERIES
+@media (max-width: 740px) {
+  .skills {
+        .wrapper {
+            h2 {
+                font-size: 3rem;
+            }  
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .skills {
+        .skillset {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .skills {
+        .wrapper {
+            width: 90%;
+            .skillset {
+                grid-template-columns: repeat(2, 1fr);
+                .skill {
+                    padding: 2rem 5%;
+                }
+            }
+        }
+    }
 }

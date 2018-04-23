@@ -54,3 +54,77 @@
     }
 }
 
+//MEDIA QUERIES
+@media (min-width: 1500px) {
+    .siteTop {
+        .wrapper {
+            .topSide1 {
+                width: 50%;
+            }
+            .topSide2 {
+                img {
+                    width: 100%;
+                    left: -10%;
+                }
+            }
+            h1 {
+            width: 60%;
+            }
+        }
+    }
+} 
+
+@media (max-width: 1115px) {
+    .siteTop .wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width: 815px) {
+    .siteTop .wrapper .topSide2 {
+        img {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 678px) {
+    .siteTop {
+        padding: 12rem 0% 8rem 0%;
+        .wrapper { 
+            width: 90%;
+            .topSide1 {
+                width: 60%;
+            }
+            .topSide2 {
+                img {
+                    top: 30%;
+                    left: -10%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 488px) {
+    .siteTop {
+        padding: 12rem 0% 8rem 0%;
+        .wrapper { 
+            width: 90%;
+            .topSide1 {
+                width: 70%;
+            }
+            .topSide2 {
+                width: 30%;
+                img {
+                    width: 160%;
+                    top: 60%;
+                    left: -50%;
+                }
+            }
+            p {
+                width: 80%
+            }
+        }
+    }
+}

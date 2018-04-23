@@ -1,4 +1,3 @@
-
 .navBar {
     width: 100%;
     background: linear-gradient(90deg, $lightLight 50%, $medLight 50%);
@@ -9,6 +8,7 @@
     .wrapper {
         width: 61%;
         display: flex;
+        max-width: 1000px;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
@@ -43,3 +43,40 @@
     }
 }
 
+// MEDIA QUERIES
+@media (max-width: 862px) {
+    header {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .navBar {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            ul {
+                li {
+                    padding: 0 3rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .navBar {
+        .wrapper {
+            ul {
+                li {
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+}

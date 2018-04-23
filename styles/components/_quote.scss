@@ -41,3 +41,59 @@
         }
     }
 }
+
+//MEDIA QUERIES
+
+@media (min-width: 1250px) {
+        .quoteBanner {
+        padding: 7rem 0;
+        .quoteText {
+            width: 25%;
+        }
+    }
+}
+@media (max-width: 1042px) {
+    .quoteBanner {
+        padding: 7rem 0;
+        .quoteText {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .quoteBanner {
+        padding: 7rem 0;
+        .quoteText {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 625px) {
+    .quoteBanner {
+        padding: 6rem 0;
+        .quoteText {
+            width: 60%;
+            p.quote {
+            font-size: 3rem;
+            }
+            &::before,
+            &::after {
+                font-size: 10rem;
+                top: -4rem;
+            }
+            &::before {
+                content: "“";
+                left: -5rem;
+            }
+            &::after {
+                content: "”";
+                right: -5rem;
+            }
+            p.author {
+                font-size: 2rem;
+            }
+        }
+    }
+}

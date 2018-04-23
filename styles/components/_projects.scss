@@ -33,16 +33,22 @@
         .projectsImg {
             display: flex;
             justify-content: center;
+            width: 100%;
+            // max-height: 400px;
             // .fas {
             //     font-weight: 400;
             //     color: #FFF;
             //     font-size: 5rem;
             // }
         
-            img{
-                width: 80%;
+            img {
+                border-top: 20px solid #EFEFEF;
+                width: 100%;
+                max-height: 425px;
+                max-width: 800px;
                 display: block;
                 border-radius: 5px 5px 0 0;
+                // padding: 0 10%;
             }
 
             // img::before {
@@ -54,5 +60,15 @@
             // }
         }
     }
+}
 
+//MEDIA QUERIES 
+@media (max-width: 740px) {
+    .projects {
+        .wrapper {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
 }

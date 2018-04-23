@@ -18,7 +18,7 @@
         p {
             color: $textGrey;
             font-size: 1.2rem;
-            width: 50%;
+            width: 60%;
             text-align: center;
             margin: 1.2rem 0;
             line-height: 2;
@@ -79,7 +79,7 @@
 .portfolio .gallery {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     figure {
         img{
             width: 100%;
@@ -103,4 +103,56 @@
             margin: 0;
         }
     }
+}
+
+//MEDIA QUERIES 
+@media (max-width: 740px) {
+    .portfolio {
+        .textWrapper {
+            width: 80%;
+            h2 {
+                font-size: 3rem;
+            }
+             p {
+            color: $textGrey;
+            font-size: 1.2rem;
+            width: 70%;
+            text-align: center;
+            margin: 1.2rem 0;
+            line-height: 2;
+            }
+        }
+        
+    }
+    .portfolio .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio {
+        .textWrapper {
+            width: 100%;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        .portfolioNav {
+            margin-bottom: 2rem;
+            ul {
+                li {
+                    padding: 0 1rem;
+                }
+            }
+        }  
+    }
+    .portfolio .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        figure {
+            figcaption {
+                padding: 1rem 0;
+            }
+        }
+    }
+
 }

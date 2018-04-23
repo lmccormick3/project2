@@ -1,17 +1,17 @@
 footer {
     width: 100%;
     background: linear-gradient(90deg, $lightLight 50%, $medLight 50%);
-    padding: 5rem 0;
     .wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 3%;
+        padding: 5rem 0;
         .column {
             h3 {
                 font-size: 1.6rem;
                 font-weight: 700;
                 color: $textBlack;
-                margin: 0;
+                margin: 0 0 1rem 0;
             }
             p {
                 color: $textGrey;
@@ -23,20 +23,154 @@ footer {
         .column2 .post {
             display: flex;
             img {
-                width: 100%;
+                width: 130%;
             }
             .postText {
                 display: flex;
                 flex-direction: column;
                 align-content: center;
-                h4 {
-                    
+                margin-left: 10%;
+                
+                h4, p.date {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    line-height: 2;
+                    color: $textBlack;
+                    margin: 0;
+                }
+                p.date {
+                    color: $textGrey;
                 }
             }
-            
+        }
+        .post1, .post2 {
+            margin-bottom: 0.5rem;
         }
         .column4 img {
             width: 100%;
         }
     }
+    .newsletter {
+        margin-top: 1rem;
+        input {
+            border: none;
+            background-color: #EBEBEB;
+            padding: 1.1rem;
+            width: 65%;
+        }
+        button {
+            border: 2px solid $textPink;
+            background: transparent;
+            color: $textPink;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            padding: 1rem;
+            font-weight: 700;
+            transition: all 0.5s ease;
+            width: 32%
+        }
+        button:hover {
+            background-color: $textPink;
+            color: #FFF;
+        }
+    }
+    .footerBottomBar {
+        width: 100%;
+        background-color: $darkDark;
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: $textGrey;
+        span {
+            color: #FFF;
+        }
+    }
 }
+
+//MEDIA QUERIES
+@media (max-width: 740px) {
+    footer {
+        .wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            .column {
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                }
+            }
+            .column2 .post {
+                img {
+                    width: 120%;
+                }
+                .postText {
+                    h4, p.date {
+                        font-size: 1.2rem;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            .post1, .post2 {
+                margin-bottom: 0.5rem;
+            }
+            .column4 img {
+                width: 100%;
+            }
+        }
+        .newsletter {
+            margin-top: 1rem;
+            input {
+                padding: 1.1rem;
+                width: 65%;
+            }
+            button {
+                font-size: 0.8rem;
+                padding: 1rem;
+                width: 32%
+            }
+        }
+    }  
+}
+
+@media (max-width: 400px) {
+    footer {
+        .wrapper {
+            grid-template-columns: 1fr;
+            .column {
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                }
+            }
+            .column2 .post {
+                img {
+                    width: 120%;
+                }
+                .postText {
+                    h4, p.date {
+                        font-size: 1.2rem;
+                        line-height: 1.5;
+                    }
+                }
+            }
+            .post1, .post2 {
+                margin-bottom: 0.5rem;
+            }
+            .column4 img {
+                width: 100%;
+            }
+        }
+        .newsletter {
+            margin-top: 1rem;
+            input {
+                padding: 1.1rem;
+                width: 65%;
+            }
+            button {
+                font-size: 0.8rem;
+                padding: 1rem;
+                width: 32%
+            }
+        }
+    }  
+}
+
