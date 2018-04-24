@@ -5,16 +5,18 @@
     border: 1px solid pink;
     position: relative;
     .yellowTriangle {
+        background:linear-gradient(45deg,$lightYellow 50%, $darkYellow 50%);
         width: 40px;
         height: 40px;
-        background:linear-gradient(45deg,$lightYellow 50%, $darkYellow 50%);
-        position: absolute;
         transform: rotate(45deg);
+        position: absolute;
         bottom: -21px;
         left: calc(50% - 20px);
     }
     .wrapper {
         display: flex;
+        position: relative;
+
         .topSide1 {
             width: 50%;
             position: relative; 
@@ -32,9 +34,9 @@
         h1 {
            font-size: 4.8rem;
            font-weight: 300;
-           color: white;
            text-transform: uppercase;
            line-height: 0.8;
+           color: white;
            margin-bottom: 1.5rem;
            span {
                font-weight: 700;
@@ -42,27 +44,52 @@
            }
         }
         p {
-            color: $textBlack;
             font-size: 1.2rem;
+            line-height: 2;
+            color: $textBlack;
             margin: 0;
             margin: 1.6rem 0 5rem 0;
-            line-height: 2;
         }
         
         a {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
             color: $textBlack;
             border: 3px solid white;
             background: transparent;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 700;
             padding: 3%;
-            text-decoration: none;
             transition: all 0.5s ease;   
         }
         a:hover {
             background-color: #FFF;
         }
+    }
+}
+.circles {
+    display: flex;
+    position: absolute;
+    bottom: -50%;
+    right: calc(50% - 20px);
+    .circle {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transition: all 0.5s ease;
+    }
+    .circle:hover {
+        border: 2px solid $textBlack;
+        cursor: pointer;
+    }
+    .circle1 {
+        border: 2px solid $textBlack;
+        margin-right: 5px;
+    }
+    .circle2 {
+        margin-right: 5px;
+
     }
 }
 
@@ -101,18 +128,7 @@
             position: absolute;
             top: 20%;
             left: -20%;
-        }
-        // .yellowTriangle {
-        //     width: 40px;
-        //     height: 40px;
-        //     background:linear-gradient(45deg,$lightYellow 50%, $darkYellow 50%);
-        //     position: absolute;
-        //     transform: rotate(45deg);
-        //     // top: 20px;
-        //     // left: -49px;
-        //     // bottom: -100px;
-        //     border: 1px solid red;
-        // }   
+        }  
     }
 }
 
@@ -135,6 +151,9 @@
                 }
             }
         }
+    }
+    .circles {
+        bottom: -20%;
     }
 }
 

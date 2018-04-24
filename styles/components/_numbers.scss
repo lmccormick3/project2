@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 5%;
+        position: relative;
         .stat {
             display: flex;
             flex-direction: column;
@@ -28,6 +29,15 @@
         .stat3 img, .stat4 img {
             margin-bottom: 1rem;
         }
+        .greenTriangle {
+            width: 40px;
+            height: 40px;
+            background:linear-gradient(45deg, $lightGreen 50%, $darkGreen 50%);
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: -100px;
+            left: calc(50% - 20px);
+        }
     }
 }
 
@@ -43,8 +53,8 @@
                     margin: 0.8rem auto 1rem auto;
                 }
                 a {
-                font-size: 1rem;
-                padding: 1rem 2rem; 
+                    font-size: 1rem;
+                    padding: 1rem 2rem; 
                 }
             }
         }

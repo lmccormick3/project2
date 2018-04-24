@@ -1,15 +1,15 @@
 .quoteBanner {
-    width: 100%;
     background: linear-gradient(90deg, $lightPink 50%, $medPink 50%);
+    width: 100%;
     padding: 9rem 0;
     position: relative;
     .quoteText {
+        text-align: center;
+        width: 30%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
-        width: 30%;
-        text-align: center;
         position: relative;
         p.quote {
             font-size: 3.6rem;
@@ -19,12 +19,12 @@
         }
         &::before,
         &::after {
-            display: block;
-            position: absolute;
-            color: white;
             font-size: 14rem;
-            top: -4rem;
             font-weight: 700;
+            color: white;
+            position: absolute;
+            top: -4rem;
+            display: block;
         }
         &::before {
             content: "“";
@@ -35,16 +35,16 @@
             right: -7rem;
         }
         p.author {
-            color: white;
             font-size: 2.4rem;
             font-weight: 300;
             line-height: 0.5;
+            color: white;
         }
     }
      .pinkTriangle {
+         background:linear-gradient(45deg,$lightPink 50%, $medPink 50%);
         width: 40px;
         height: 40px;
-        background:linear-gradient(45deg,$lightPink 50%, $medPink 50%);
         position: absolute;
         transform: rotate(45deg);
         bottom: -20px;
@@ -53,7 +53,6 @@
 }
 
 //MEDIA QUERIES
-
 @media (min-width: 1250px) {
         .quoteBanner {
         padding: 7rem 0;

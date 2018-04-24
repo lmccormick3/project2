@@ -1,63 +1,64 @@
 .projects {
-    width: 100%;
     background-color: $medDark;
-    padding-top: 5rem;
+    width: 100%;
+    padding-top: 6rem;
     .wrapper {
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
         h2 {
-            color:white;
             font-size: 3.6rem;
             font-weight: 300;
-            margin: 0 auto;
+            color:white;
             text-transform: uppercase;
+            margin: 0 auto;
         }
         p {
-            color: $textGrey;
             font-size: 1.2rem;
-            width: 50%;
             text-align: center;
-            margin: 1.2rem 0;
             line-height: 2;
+            color: $textGrey;
+            width: 50%;
+            margin: 1.2rem 0;
         }
         p::after {
             content:"";
             background-color: $lightDark;
             width: 30%;
             height: 2px;
-            display: block;
             margin: 3rem auto;
+            display: block;
         }
         .projectsImg {
+            width: 100%;
             display: flex;
             justify-content: center;
-            width: 100%;
-            // max-height: 400px;
-            // .fas {
-            //     font-weight: 400;
-            //     color: #FFF;
-            //     font-size: 5rem;
-            // }
-        
+            position: relative;
+            .before, .after {
+                font-size: 5rem;
+                color: #FFF;
+                position: absolute;
+                top: 50%;
+                transition: color 0.5s ease;
+            }
+            .before:hover, .after:hover {
+                color: $lightGreen;
+            }
+            .before {
+                left: -10%;
+            }
+            .after {
+                right: -10%;
+            }
             img {
                 border-top: 20px solid #EFEFEF;
-                width: 100%;
-                max-height: 425px;
-                max-width: 800px;
-                display: block;
                 border-radius: 5px 5px 0 0;
-                // padding: 0 10%;
+                width: 100%;
+                max-width: 800px;
+                max-height: 425px;
+                display: block;
             }
-
-            // img::before {
-            //     content: "potato";
-            //     color: white;
-            //     display: block;
-            //     font-size: 5rem;
-                
-            // }
         }
     }
 }
@@ -68,6 +69,17 @@
         .wrapper {
             h2 {
                 font-size: 3rem;
+            }
+            .projectsImg {
+                .before, .after {
+                font-size: 3rem;
+                }
+                .before {
+                    left: -8%;
+                }
+                .after {
+                    right: -8%;
+                }
             }
         }
     }

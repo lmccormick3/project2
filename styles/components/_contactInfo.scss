@@ -1,30 +1,42 @@
 .contactInfo {
     font-family: 'OpenSans', sans-serif;
-    width: 100%;
+    text-align: center;
     background: linear-gradient(90deg, $lightYellow 50%, $darkYellow 50%);
+    width: 100%;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    p.phone {
-        font-weight: 700;
-        font-size: 2.4rem;
-        color: #FFF;
-        margin: 0;
-    }
-    p.email {
-        font-size: 4.8rem;
-        font-weight: 700;
-        color: $textBlack;
-        border: 3px solid white;
-        padding: 1rem;
-        margin: 0.5rem;
-    }
-    p.address {
-        font-size: 1.8rem;
-        font-weight: 300;
+    .textInfo {
+        position: relative;
+        p.phone {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #FFF;
+            margin: 0;
+        }
+        p.email {
+            font-size: 4.8rem;
+            font-weight: 700;
+            color: $textBlack;
+            border: 3px solid white;
+            padding: 1rem;
+            margin: 0.5rem;
+        }
+        p.address {
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+        .yellowTriangle {
+            background:linear-gradient(45deg,$lightYellow 50%, $darkYellow 50%);
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: -70px;
+            left: calc(50% - 20px);
+        }
     }
     .map {
         width: 100%;
@@ -38,11 +50,11 @@
 }
 
 .getInTouch {
-    width: 100%;
+    text-align: center;
     background-color: $darkDark;
+    width: 100%;
     padding: 5rem 0;
     display: flex;
-    text-align: center;
     flex-direction: column;
     align-items: center;
     .getInTouchWrapper {
@@ -51,18 +63,18 @@
         flex-direction: column;
         align-items: center; 
         h2 {
-            color:#FFF;
             font-size: 3.6rem;
             font-weight: 300;
-            margin: 0 auto;
             text-transform: uppercase;
+            color:#FFF;
+            margin: 0 auto;
         }
         p {
-            color: $textGrey;
             font-size: 1.2rem;
             text-align: center;
-            margin: 1.2rem 0;
             line-height: 2;
+            color: $textGrey;
+            margin: 1.2rem 0;
         }
         p::after {
             content:"";
@@ -74,13 +86,13 @@
         }
     }
     .social ul {
-        display: flex;
         list-style: none;
-        justify-content: center;
         padding: 0;
+        display: flex;
+        justify-content: center;
         a {
-            text-decoration: none;
             font-size: 1.5rem;
+            text-decoration: none;
             color: #FFF;
             padding: 5px;
             margin: 0 5px;
@@ -114,17 +126,17 @@
         }
     }
     form {
-        margin: 3rem 0 2rem 0;
         width: 100%;
+        margin: 3rem 0 2rem 0;
         input, textarea {
             font-size: 1.2rem;
-            width: 100%;
-            border: none;
-            background-color: $medDark;
-            margin-bottom: 1rem;
-            color: $textGrey;
             text-align: center;
+            color: $textGrey;
+            background-color: $medDark;
+            border: none;
+            width: 100%;
             padding: 1rem 0;
+            margin-bottom: 1rem;
         }
         input:focus,
         textarea:focus {
@@ -134,13 +146,13 @@
         }
     }
     input[type="submit"] {
+        font-size: 0.8rem;
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 0.8rem;
-        padding: 1rem 4rem;
-        background: transparent;
         color: #FFF;
+        background: transparent;
         border: 2px solid #FFF;
+        padding: 1rem 4rem;
         transition: all 0.5s ease;
     }
     input[type="submit"]:hover {
@@ -151,18 +163,23 @@
 
 //MEDIA QUERIES
 @media (max-width: 740px) {
-  .contactInfo {
-        p.phone {
-            font-size: 2rem;
-        }
-        p.email {
-            font-size: 3rem;
-            padding: 1rem;
-            width: 100%;
-        }
-        p.address {
-            font-size: 1.3rem;
-            font-weight: 400;
+    .contactInfo {
+        .textInfo {
+            p.phone {
+                font-size: 2rem;
+            }
+            p.email {
+                font-size: 3rem;
+                width: 100%;
+                padding: 1rem;
+            }
+            p.address {
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+            .yellowTriangle {
+                bottom: -50px;
+            }
         }
         .map {
             margin-top: 3rem;
@@ -191,20 +208,22 @@
 
 @media (max-width: 500px) {
   .contactInfo {
-        p.phone {
-            font-size: 1.8rem;
-        }
-        p.email {
-            font-size: 2.5rem;
-        }
-        p.address {
-            font-size: 1.1rem;
-        }
-        .map {
-            iframe {
-                height: 200px;
-            }
-        }
+      .textInfo {
+          p.phone {
+              font-size: 1.8rem;
+          }
+          p.email {
+              font-size: 2.5rem;
+          }
+          p.address {
+              font-size: 1.1rem;
+          }
+          .map {
+              iframe {
+                  height: 200px;
+              }
+          }
+      }
     }
     .getInTouch {
         .getInTouchWrapper {

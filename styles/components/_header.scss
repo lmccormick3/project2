@@ -1,15 +1,14 @@
 .navBar {
-    width: 100%;
     background: linear-gradient(90deg, $lightLight 50%, $medLight 50%);
+    box-shadow: 1px 1px 5px $textGrey;
+    width: 100%;
     padding: 10px 0;
     position: fixed;
     z-index: 10;
-    box-shadow: 1px 1px 5px $textGrey;
     .wrapper {
         width: 61%;
-        display: flex;
         max-width: 1000px;
-        flex-wrap: nowrap;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         img {
@@ -17,8 +16,8 @@
         }
         ul {
             list-style: none;
-            display: flex;
             padding: 0;
+            display: flex;
             li {
                 border-right: 1px solid gainsboro;
                 padding: 0 1.8rem;
@@ -35,8 +34,8 @@
                     transition: all 1s ease;
                 }
                 a:hover {
-                    color: $textPink;
                     font-weight: 700;
+                    color: $textPink;
                 }
             }
         }
@@ -47,20 +46,20 @@
 @media (max-width: 862px) {
     header {
         .wrapper {
+            text-align: center;
             display: flex;
             flex-direction: column;
             align-content: center;
-            text-align: center;
         }
     }
 }
 @media (max-width: 600px) {
     .navBar {
         .wrapper {
+            text-align: center;
             display: flex;
             flex-direction: column;
             align-content: center;
-            text-align: center;
             ul {
                 li {
                     padding: 0 3rem;

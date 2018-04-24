@@ -3,44 +3,44 @@
     background-color: $darkDark;
     padding: 5rem 0 ;
     .wrapper {
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
         h2 {
-            color:white;
             font-size: 3.6rem;
             font-weight: 300;
-            margin: 0 auto;
             text-transform: uppercase;
+            color:white;
+            margin: 0 auto;
         }
         p.skillInfo {
-            color: $textGrey;
             font-size: 1.2rem;
-            width: 50%;
             text-align: center;
-            margin: 1.2rem 0;
             line-height: 2;
+            color: $textGrey;
+            width: 50%;
+            margin: 1.2rem 0;
         }
         p.skillInfo::after {
             content:"";
             background-color: $lightDark;
             width: 30%;
             height: 2px;
-            display: block;
             margin: 1.6rem auto;
+            display: block;
         }
     }
     .skillset {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        width: 100%;
         .skill {
+            color: white;
+            padding: 3rem 8%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 3rem 8%;
-            color: white;
             .skillImg {
                 display: flex;
                 justify-content: center;
@@ -51,11 +51,11 @@
                margin: 1.6rem 0;
             }
            p {
-               color: $textGrey;
-               font-weight: 300;
                font-size: 1rem;
+               font-weight: 300;
                text-align: center;
                line-height: 24px;
+               color: $textGrey;
                margin:0;
            }
         }

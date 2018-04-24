@@ -1,54 +1,54 @@
 .aboutUs {
-    width: 100%;
     background-color: $medDark;
-    padding: 5rem 0;
+    width: 100%;
+    padding: 6rem 0;
     .wrapper {
-        display: flex;
+        margin: 0 auto;
         flex-direction: column;
         align-items: center;
-        margin: 0 auto;
+        display: flex;
         h2 {
-            color:white;
             font-size: 3.6rem;
             font-weight: 300;
-            margin: 0 auto;
             text-transform: uppercase;
+            color:white;
+            margin: 0 auto;
         }
         p.bio {
-            color: $textGrey;
             font-size: 1.2rem;
-            width: 50%;
             text-align: center;
-            margin: 1.2rem 0;
             line-height: 2;
+            color: $textGrey;
+            width: 50%;
+            margin: 1.2rem 0;
         }
         p.bio::after {
             content:"";
             background-color: $lightDark;
             width: 30%;
             height: 2px;
-            display: block;
             margin: 1.6rem auto;
+            display: block;
         }
     }
 }
 
 .aboutCards {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 3%;
-    width: 100%;
     .card {
+        color: white;
         background-color: $lightDark;
+        padding: 3rem 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3rem 10%;
-        color: white;
         .cardImg {
+            width: 70%;
             display: flex;
             justify-content: center;
-            width: 70%;
         }
         h4 {
             font-size: 1.5rem; 
@@ -56,11 +56,11 @@
             margin: 1rem;
         }
         p {
-            color: $textGrey;
             font-weight: 300;
             font-size: 1rem;
             text-align:center;
             line-height: 2;
+            color: $textGrey;
             margin: 0.6rem 0;
         }
     }
@@ -91,10 +91,7 @@
         }
     }
     .aboutCards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2%;
-        width: 100%;
         .card {
             padding: 2rem 5%;
         }

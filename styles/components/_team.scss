@@ -1,27 +1,27 @@
 .meetTheTeam {
-    width: 100%;
     background-color: $darkDark;
+    width: 100%;
     padding: 5rem 0;
     .wrapper {
+        text-align: center;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         h2 {
-            color:white;
             font-size: 3.6rem;
             font-weight: 300;
-            margin: 0 auto;
             text-transform: uppercase;
+            color:white;
+            margin: 0 auto;
         }
         p {
-            color: $textGrey;
             font-size: 1.2rem;
-            width: 50%;
             text-align: center;
-            margin: 1.2rem 0;
             line-height: 2;
+            color: $textGrey;
+            width: 50%;
+            margin: 1.2rem 0;
         }
         p::after {
             content:"";
@@ -33,7 +33,6 @@
         }
         .team {
             display: grid;
-            // grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
             grid-template-columns: repeat(4, 1fr);
             grid-column-gap: 2%;
             .member {
@@ -43,15 +42,20 @@
                 border-bottom: 8px solid $lightPink;
                 img {
                     width: 100%;
+                    transition: all 0.5s ease;
+                }
+                img:hover {
+                    transform: scale(1.3);
+                    z-index: 2;
                 }
                 .social ul {
-                    display: flex;
                     list-style: none;
-                    justify-content: center;
                     padding: 3rem 0;
+                    display: flex;
+                    justify-content: center;
                     a {
-                        text-decoration: none;
                         font-size: 1.5rem;
+                        text-decoration: none;
                         color: #FFF;
                         padding: 5px;
                         margin: 0 5px;
