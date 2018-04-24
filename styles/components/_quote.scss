@@ -2,6 +2,7 @@
     width: 100%;
     background: linear-gradient(90deg, $lightPink 50%, $medPink 50%);
     padding: 9rem 0;
+    position: relative;
     .quoteText {
         display: flex;
         flex-direction: column;
@@ -39,6 +40,15 @@
             font-weight: 300;
             line-height: 0.5;
         }
+    }
+     .pinkTriangle {
+        width: 40px;
+        height: 40px;
+        background:linear-gradient(45deg,$lightPink 50%, $medPink 50%);
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: -20px;
+        left: calc(50% - 20px);
     }
 }
 
